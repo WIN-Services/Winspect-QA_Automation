@@ -1,14 +1,12 @@
 package winspect.com;
 
 import java.awt.Robot;
-import java.net.PasswordAuthentication;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
@@ -46,14 +44,14 @@ public class Winspect_Desktop extends BaseClass {
 	@Test(priority = 2)
 	private void userName() {
 		WebElement userName = driver.findElement(By.xpath("//input[@placeholder='Enter your username']"));
-		userName.sendKeys("bkathirvel");
+		userName.sendKeys("sempally");
 
 	}
 
 	@Test(priority = 3)
 	private void password() {
 		WebElement password = driver.findElement(By.xpath("//input[@placeholder='Enter your password']"));
-		password.sendKeys("Balaji@123");
+		password.sendKeys("Win@1234");
 
 	}
 
