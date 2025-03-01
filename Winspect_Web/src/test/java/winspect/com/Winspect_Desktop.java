@@ -179,6 +179,8 @@ public class Winspect_Desktop extends BaseClass {
 		RoofeyeIcon.click();
 
 		System.out.println("Roof icon clicked");
+		
+		System.out.println("Roof icon clicked");
 
 		
 
