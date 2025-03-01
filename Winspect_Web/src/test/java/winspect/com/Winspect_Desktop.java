@@ -12,6 +12,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import com.baseclass.BaseClass;
+import com.baseclass.LoginPage;
 
 public class Winspect_Desktop extends BaseClass {
 
@@ -37,8 +38,9 @@ public class Winspect_Desktop extends BaseClass {
 
 	@Test(priority = 1)
 	private void company_Key() {
-		WebElement cK1 = driver.findElement(By.xpath("//input[@name='companyKey1']"));
-		cK1.sendKeys("9");
+		LoginPage loginPage = new LoginPage(driver);
+		loginPage.sendCKey1("9");
+		
 		WebElement cK2 = driver.findElement(By.xpath("//input[@name='companyKey2']"));
 		cK2.sendKeys("9");
 
